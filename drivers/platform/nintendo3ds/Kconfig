@@ -6,6 +6,8 @@ menuconfig NINTENDO3DS_PLATFORM_DEVICES
 	bool "Nintendo 3DS specific device drivers"
 	depends on ARCH_CTR
 	default y
+	select FONT_SUPPORT
+	select MFD_CORE
 	help
 	  Say Y here to get to use specific device drivers for the Nintendo 3DS
 	  port.
